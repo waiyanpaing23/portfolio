@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wai Yan Paing - Full Stack Developer</title>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="bg-zinc-900 min-h-[100vh] text-white text-lg font-[Libre Franklin]">
+  <nav class="flex justify-between items-center w-[80vw] mx-auto py-4 md:py-0">
+    <div>
+      <a href="/" class="text-xl font-semibold">
+        <span class="text-2xl">W</span>ai Yan Paing
+      </a>
+    </div>
+    <div class="flex">
+      <div id="menu"
+        class="md:static absolute md:min-h-full min-h-[100vh] right-0 top-[-100%] bg-zinc-800 md:bg-transparent w-2/5 md:w-auto flex p-5 z-10 transition-transform">
+        <ul class="flex md:flex-row flex-col md:items-center gap-[4vw]">
+          <li>
+            <ion-icon onclick="onToggleMenu(this)" name="close" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-teal-600">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-teal-600">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-teal-600">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-teal-600">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <ion-icon id="themeToggle" name="sunny" class="text-2xl cursor-pointer"></ion-icon>
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+    </div>
+  </nav>
+
+  <div class="flex flex-col mx-auto w-[90%] md:w-[70%]">
+    <div class="block md:flex items-center justify-center min-h-[90vh] mx-auto gap-10">
+      <div class="flex-1 flex justify-center items-center my-10">
+        <img src="/images/profile1.jpg" alt="Profile"
+          class="animate__animated animate__fadeInRight w-1/2 md:w-96 h-auto rounded-full shadow-lg">
+      </div>
+      <div class="flex-1 px-7 md:order-first">
+        <p class="font-semibold">Hello, I'm <br><span class="name"></span></p>
+        <p class="text-2xl md:text-3xl font-semibold mt-5">A Full Stack Developer</p>
+        <p class="mt-6">I have a deep interest in web development, with a passion on building exceptional web
+          applications. I am
+          willing to look for opportunities to gain new experiences and to grow professionally for my career.</p>
+      </div>
+    </div>
+
+    <hr class="hidden md:block mt-4">
+
+    <div id="about">
+      <h1 class="headline text-4xl font-bold text-center my-20">About Me</h1>
+      <div class="block md:flex min-h-[60vh] my-14 lg:my-0">
+        <div class="flex-1 px-7">
+          <h3 class="headline text-2xl text-teal-500 font-semibold mb-5">Introduction</h3>
+          <p class="headline mb-10">I began my programming journey at Strategy First University in 2022 and I've
+            graduated NCC Level 4 Diploma in Computing degree.
+            Starting from this, I've developed both technical skills like PHP, Laravel, JavaScript, and Tailwind, as
+            well as problem solving skills.
+            I love to create meaning projects with what I've learnt, and my goal is to become a successful fullstack
+            developer.
+          </p>
+          <a href="" class="px-6 py-3 bg-teal-700 hover:bg-teal-600 text-white cursor-pointer rounded-lg">Download My
+            CV</a>
+        </div>
+        <div class="flex-1 ps-0 md:ps-20 pt-10 md:pt-0">
+          <div class="space-y-5 headline">
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">Name</div>
+              <div class="w-[100%] md:w-2/3 border-2 border-teal-700 rounded-md text-center px-4 py-2">Wai Yan Paing
+              </div>
+            </div>
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">Date of Birth</div>
+              <div class="w-[100%] md:w-2/3 border-2 border-teal-700 rounded-md text-center px-4 py-2">23/04/2003</div>
+            </div>
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">Phone Number</div>
+              <div class="w-[100%] md:w-2/3 border-2 border-teal-700 rounded-md text-center px-4 py-2">09796710874</div>
+            </div>
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">Email Address</div>
+              <div class="w-[100%] md:w-2/3 border-2 border-teal-700 rounded-md text-center px-4 py-2">
+                waiyanpaing2304@gmail.com</div>
+            </div>
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">GitHub</div>
+              <div class="w-[100%] md:w-2/3 border-2 border-teal-700 rounded-md text-center px-4 py-2">
+                https://github.com/waiyanpaing23/</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="hidden md:block">
+
+    <div class="skills min-h-[100vh] headline" id="skills">
+      <h1 class="text-4xl font-bold text-center mt-10"> Skills</h1>
+      <div class="w-[100%] md:w-[90%] mx-auto">
+        <p class="px-14 my-10">I am currently focusing on Laravel and have worked on various projects including a job
+          search platform. Alongside Laravel, I've also learned PHP and
+          Django, to expand my knowledges in different languauges.</p>
+      </div>
+      <div class="block md:flex md:space-x-10">
+        <div class="flex-1 px-10">
+          <h4 class="text-3xl text-teal-500 font-semibold text-center mb-10">Frontend</h4>
+          <ul class="space-y-8">
+            <li>
+              <h3>HTML</h3>
+              <span class="bar headline"><span class="animate-html w-[90%] duration-1000"></span></span>
+            </li>
+            <li>
+              <h3>CSS</h3>
+              <span class="bar headline"><span class="animate-css w-[70%] duration-1000"></span></span>
+            </li>
+            <li>
+              <h3>JavaScript</h3>
+              <span class="bar headline"><span class="animate-js w-[40%] duration-1000"></span></span>
+            </li>
+            <li>
+              <h3>Tailwind</h3>
+              <span class="bar headline"><span class="animate-tailwind w-[30%] duration-1000"></span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1 px-10 py-10 md:py-0">
+          <h4 class="text-3xl text-teal-500 font-semibold text-center mb-10">Backend</h4>
+          <ul class="space-y-8">
+            <li>
+              <h3>Laravel</h3>
+              <span class="bar headline"><span class="animate-laravel w-[50%] duration-1000"></span></span>
+            </li>
+            <li>
+              <h3>PHP</h3>
+              <span class="bar headline"><span class="animate-js w-[40%] duration-1000"></span></span>
+            </li>
+            <li>
+              <h3>Django</h3>
+              <span class="bar headline"><span class="animate-django w-[20%] duration-1000"></span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hidden md:block">
+
+    <div id="projects">
+      <h1 class="text-4xl font-bold text-center my-12">My Projects</h1>
+      <div class="headline block md:flex space-x-0 md:space-x-10">
+        <div class="flex-1 relative group w-full h-full">
+          <a href="https://github.com/waiyanpaing23/job_search_platform" target="_blank">
+            <img src="/images/project.png" class="w-full h-full object-cover rounded-md shadow-md" alt="Project">
+            <div
+              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 class="text-white text-3xl font-bold mb-2">Job Search Platform</h2>
+              <p class="text-white text-lg">Laravel</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex-1 relative group w-full h-full mt-5 md:mt-0">
+          <a href="https://github.com/waiyanpaing23/marketplace" target="_blank">
+            <img src="/images/project1.png" class="w-full h-full object-cover rounded-md shadow-md" alt="Project">
+            <div
+              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 class="text-white text-3xl font-bold mb-2">Marketplace</h2>
+              <p class="text-white text-lg">Django</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="headline block md:flex space-x-0 md:space-x-10 mt-5 md:mt-10">
+        <div class="flex-1 relative group w-full h-full">
+          <a href="https://github.com/waiyanpaing23/social_media_campaign" target="_blank">
+            <img src="/images/project2.png" class="w-full h-full object-cover rounded-md shadow-md" alt="Project">
+            <div
+              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 class="text-white text-3xl font-bold mb-2">Social Media Campaign</h2>
+              <p class="text-white text-lg">PHP</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex-1 relative group w-full h-full mt-5 md:mt-0 ">
+          <a href="https://github.com/waiyanpaing23/portfolio" target="_blank">
+            <div class="w-full px-7 py-5 bg-zinc-500 rounded-md">
+              <img src="/images/project3.png" class="w-full h-full object-cover shadow-lg" alt="Project">
+            </div>
+            <div
+              class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h2 class="text-white text-3xl font-bold mb-2">Portfolio</h2>
+              <p class="text-white text-lg">Tailwind CSS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="hidden md:block mt-10">
+
+    <div class="flex flex-col items-center justify-center h-[30vh] md:w-[70%] mx-auto" id="contact">
+      <h4 class="text-3xl font-semibold mt-12">Contact</h4>
+      <p class=" text-center my-8">Feel free to reach out. I am always open for opportunities, collaborations or
+        anything. I'd love to hear from you.</p>
+      <a href="mailto:waiyanpaing2304@gmail.com"
+        class="px-6 py-3 bg-teal-700 hover:bg-teal-600 text-white cursor-pointer rounded-lg">Get in touch</a>
+    </div>
+
+    <div
+      class="animate__animated animate__fadeInUp fixed bottom-10 right-14 hidden md:flex flex-col items-center space-y-4"
+      id="social-icon">
+      <a href="https://github.com/waiyanpaing23/" target="_blank">
+        <ion-icon name="logo-github" class="text-3xl"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/share/14dDSvAmvS/?mibextid=qi2Omg" target="_blank">
+        <ion-icon name="logo-facebook" class="text-3xl"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/wy_paing" target="_blank">
+        <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
+      </a>
+    </div>
+  </div>
+
+  <footer class="text-center mt-20 pb-5">
+    <div class="flex space-x-5 justify-center mb-3">
+      <a href="https://github.com/waiyanpaing23/" target="_blank">
+        <ion-icon name="logo-github" class="text-3xl"></ion-icon>
+      </a>
+      <a href="https://www.facebook.com/share/14dDSvAmvS/?mibextid=qi2Omg" target="_blank">
+        <ion-icon name="logo-facebook" class="text-3xl"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/wy_paing" target="_blank">
+        <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
+      </a>
+    </div>
+    <p>Copyright&copy;2025, WaiYanPaing</p>
+  </footer>
+
+  <script src="/src/js/app.js"></script>
+  <script>
+    function onToggleMenu(e) {
+      const menu = document.getElementById('menu');
+      const isMenuVisible = menu.style.top === '0%';
+
+      if (isMenuVisible) {
+        // Slide out (hide menu)
+        menu.classList.remove('animate-slideIn');
+        menu.classList.add('animate-slideOut');
+
+        // Delay hiding the menu until the animation completes
+        setTimeout(() => {
+          menu.style.top = '-100%';
+          menu.classList.add('hidden');
+          menu.classList.remove('animate-slideOut');
+        }, 500); // Matches the animation duration (0.5s)
+      } else {
+        // Slide in (show menu)
+        menu.classList.remove('hidden', 'animate-slideOut');
+        menu.style.top = '0%';
+        void menu.offsetWidth; // Trigger reflow to reset animation
+        menu.classList.add('animate-slideIn');
+      }
+    }
+
+    window.addEventListener("scroll", () => {
+      const socialIcon = document.getElementById("social-icon");
+
+      // Check if the user has scrolled to the bottom
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        socialIcon.classList.remove('md:flex'); // Hide the fixed div
+      } else {
+        socialIcon.classList.add('md:flex'); // Show the fixed div
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
