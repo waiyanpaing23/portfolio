@@ -7,6 +7,24 @@
 *{
     list-style: none;
 }
+.bg-gradient{
+    background: radial-gradient(ellipse 700px 700px at top left, #134e4a, #080808);
+    position: fixed; /* Key to making it fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.bg-glass{
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+.body{
+    z-index: 0;
+    position: relative;
+}
 .bar{
     display: block;
     height: 20px;
@@ -26,3 +44,8 @@
     background: linear-gradient(135deg, rgba(0, 128, 128, 1) 0%, rgba(0, 191, 255, 1) 100%);
 }
 
+@media (max-width: 768px){
+    .bg-gradient{
+        background: radial-gradient(ellipse 400px 400px at top left, #134e4a, black);
+    }
+}

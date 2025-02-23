@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg" href="./public/images/icon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wai Yan Paing - Full Stack Developer</title>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -15,7 +15,9 @@
   <script type="module" src="/src/main.js"></script>
 </head>
 
-<body class="bg-zinc-900 min-h-[100vh] text-white text-lg font-[Libre Franklin]">
+<body class="min-h-[100vh] text-white text-lg font-[Libre Franklin]">
+  <div class="bg-gradient" id="background">
+  </div>
   <nav class="flex justify-between items-center w-[80vw] mx-auto py-4 md:py-0">
     <div>
       <a href="/" class="text-xl font-semibold">
@@ -24,7 +26,7 @@
     </div>
     <div class="flex">
       <div id="menu"
-        class="md:static absolute md:min-h-full min-h-[100vh] right-0 top-[-100%] bg-zinc-800 md:bg-transparent w-2/5 md:w-auto flex p-5 z-10 transition-transform">
+        class="md:static absolute md:min-h-full min-h-[100vh] right-0 top-[-100%] bg-glass md:bg-transparent w-1/2 md:w-auto flex p-5 z-10 transition-transform">
         <ul class="flex md:flex-row flex-col md:items-center gap-[4vw]">
           <li>
             <ion-icon onclick="onToggleMenu(this)" name="close" class="text-3xl cursor-pointer md:hidden"></ion-icon>
@@ -162,7 +164,7 @@
             </li>
             <li>
               <h3>Django</h3>
-              <span class="bar headline"><span class="animate-django w-[20%] duration-1000"></span></span>
+              <span class="bar headline"><span class="animate-tailwind w-[30%] duration-1000"></span></span>
             </li>
           </ul>
         </div>
@@ -227,7 +229,7 @@
 
     <hr class="hidden md:block mt-10">
 
-    <div class="flex flex-col items-center justify-center h-[30vh] md:w-[70%] mx-auto" id="contact">
+    <div class="flex flex-col items-center justify-center h-[30vh] md:w-[70%] mx-auto mt-10 md:mt-0" id="contact">
       <h4 class="text-3xl font-semibold mt-12">Contact</h4>
       <p class=" text-center my-8">Feel free to reach out. I am always open for opportunities, collaborations or
         anything. I'd love to hear from you.</p>

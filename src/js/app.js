@@ -17,13 +17,16 @@ window.addEventListener('resize', resetMenuOnResize);
 const body = document.body;
 const menu = document.getElementById('menu');
 const toggleButton = document.getElementById('themeToggle');
+const background = document.getElementById('background');
 
 toggleButton.addEventListener('click', () => {
-    if (body.classList.contains('bg-zinc-900')) {
+    if (background.classList.contains('bg-gradient')) {
         // Switch to Light Mode
-        body.classList.remove('bg-zinc-900', 'text-white');
-        menu.classList.remove('bg-zinc-800')
-        body.classList.add('bg-[#f4f4f4]', 'text-black');
+        background.classList.remove('bg-gradient');
+        body.classList.remove('text-white');
+        menu.classList.remove('bg-glass')
+        background.classList.add('bg-[#f4f4f4]');
+        body
         menu.classList.add('bg-[#ECECEC]');
         toggleButton.classList.remove('text-white');
         toggleButton.classList.add('text-black');
@@ -31,10 +34,12 @@ toggleButton.addEventListener('click', () => {
 
     } else {
         // Switch to Dark Mode
-        body.classList.remove('bg-[#f4f4f4]', 'text-black');
+        background.classList.remove('bg-[#f4f4f4]');
+        body.classList
         menu.classList.remove('bg-[#ECECEC]')
-        body.classList.add('bg-zinc-900', 'text-white');
-        menu.classList.add('bg-zinc-800');
+        background.classList.add('bg-gradient');
+        body.classList.add('text-white');
+        menu.classList.add('bg-glass');
         toggleButton.classList.remove('text-black');
         toggleButton.classList.add('text-white');
         toggleButton.setAttribute('name', 'sunny');
