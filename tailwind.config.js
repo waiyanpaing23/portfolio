@@ -38,7 +38,7 @@ export default {
         },
         laravel: {
           '0%': { width: '0%' },
-          '100%': { width: '50%' },
+          '100%': { width: '60%' },
         },
         django: {
           '0%': { width: '0%' },

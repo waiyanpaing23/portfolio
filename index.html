@@ -6,7 +6,9 @@
   <link rel="icon" type="image/svg" href="./public/images/icon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wai Yan Paing - Full Stack Developer</title>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
@@ -142,12 +144,12 @@
               <span class="bar headline"><span class="animate-css w-[70%] duration-1000"></span></span>
             </li>
             <li>
-              <h3>JavaScript</h3>
+              <h3>Tailwind</h3>
               <span class="bar headline"><span class="animate-js w-[40%] duration-1000"></span></span>
             </li>
             <li>
-              <h3>Tailwind</h3>
-              <span class="bar headline"><span class="animate-tailwind w-[30%] duration-1000"></span></span>
+              <h3>React JS</h3>
+              <span class="bar headline"><span class="animate-django w-[30%] duration-1000"></span></span>
             </li>
           </ul>
         </div>
@@ -156,7 +158,7 @@
           <ul class="space-y-8">
             <li>
               <h3>Laravel</h3>
-              <span class="bar headline"><span class="animate-laravel w-[50%] duration-1000"></span></span>
+              <span class="bar headline"><span class="animate-laravel w-[60%] duration-1000"></span></span>
             </li>
             <li>
               <h3>PHP</h3>
@@ -177,50 +179,70 @@
       <h1 class="text-4xl font-bold text-center my-12">My Projects</h1>
       <div class="headline block md:flex space-x-0 md:space-x-10">
         <div class="flex-1 relative group w-full h-full">
-          <a href="https://github.com/waiyanpaing23/job_search_platform" target="_blank">
+          <!-- <a href="https://github.com/waiyanpaing23/job_search_platform" target="_blank"> -->
             <img src="/images/project.png" class="w-full h-full object-cover rounded-md shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h2 class="text-white text-3xl font-bold mb-2">Job Search Platform</h2>
-              <p class="text-white text-lg">Laravel</p>
+              <p class="text-white text-lg mb-4">Laravel</p>
+              <div class="flex space-x-3">
+                <a href="https://github.com/waiyanpaing23/job_search_platform" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
+                  <ion-icon name="logo-github" class="text-3xl me-2"></ion-icon> <span>View Repo</span></a>
+              </div>
             </div>
-          </a>
+          <!-- </a> -->
         </div>
 
-        <div class="flex-1 relative group w-full h-full mt-10 md:mt-0">
-          <a href="https://github.com/waiyanpaing23/marketplace" target="_blank">
-            <img src="/images/project1.png" class="w-full h-full object-cover rounded-md shadow-lg" alt="Project">
+        <div class="flex-1 relative group w-full h-full mt-10 md:mt-0 ">
+          <!-- <a href="https://github.com/waiyanpaing23/social_media_campaign" target="_blank"> -->
+              <img src="/images/unigator.jpg" class="w-full h-full rounded-md object-cover shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 class="text-white text-3xl font-bold mb-2">Marketplace</h2>
-              <p class="text-white text-lg">Django</p>
+              <h2 class="text-white text-3xl font-bold mb-2">Unigator (University Navigator)</h2>
+              <p class="text-white text-lg mb-4">Laravel API</p>
+              <div class="flex space-x-3">
+                <a href="https://unigator.newway.com.mm/" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
+                  <ion-icon name="eye-outline" class="text-3xl me-2"></ion-icon> <span>Demo</span></a>
+                <a href="https://github.com/One-Project-One-Week/Unigator-Backend" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
+                  <ion-icon name="logo-github" class="text-3xl me-2"></ion-icon> <span>View Repo</span></a>
+              </div>
             </div>
-          </a>
+          <!-- </a> -->
         </div>
+
       </div>
 
       <div class="headline block md:flex space-x-0 md:space-x-10 mt-10 md:mt-10">
         <div class="flex-1 relative group w-full h-full">
-          <a href="https://github.com/waiyanpaing23/echo_social_media" target="_blank">
+          <!-- <a href="https://github.com/waiyanpaing23/echo_social_media" target="_blank"> -->
             <img src="/images/project4.png" class="w-full h-full object-cover rounded-md shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h2 class="text-white text-3xl font-bold mb-2">Echo Social Media</h2>
-              <p class="text-white text-lg">Django</p>
+              <p class="text-white text-lg mb-4">Django</p>
+              <div class="flex space-x-3">
+                <a href="https://github.com/waiyanpaing23/echo_social_media" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
+                  <ion-icon name="logo-github" class="text-3xl me-2"></ion-icon> <span>View Repo</span></a>
+              </div>
             </div>
-          </a>
+          <!-- </a> -->
         </div>
 
-        <div class="flex-1 relative group w-full h-full mt-10 md:mt-0 ">
-          <a href="https://github.com/waiyanpaing23/social_media_campaign" target="_blank">
-              <img src="/images/project2.png" class="w-full h-full rounded-md object-cover shadow-lg" alt="Project">
+        <div class="flex-1 relative group w-full h-full mt-10 md:mt-0">
+          <!-- <a href="https://github.com/waiyanpaing23/marketplace" target="_blank"> -->
+            <img src="/images/project1.png" class="w-full h-full object-cover rounded-md shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 class="text-white text-3xl font-bold mb-2">Social Media Campaign</h2>
-              <p class="text-white text-lg">PHP</p>
+              <h2 class="text-white text-3xl font-bold mb-2">Marketplace</h2>
+              <p class="text-white text-lg mb-4">Django</p>
+              <div class="flex space-x-3">
+                <a href="https://github.com/waiyanpaing23/marketplace" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
+                  <ion-icon name="logo-github" class="text-3xl me-2"></ion-icon> <span>View Repo</span></a>
+              </div>
             </div>
-          </a>
+          <!-- </a> -->
         </div>
+        
       </div>
 
     </div>

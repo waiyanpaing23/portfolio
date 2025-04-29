@@ -68,7 +68,7 @@ ScrollReveal().reveal('.bar span', {
         } else if (el.classList.contains('animate-tailwind')) {
             el.style.width = '30%';
         } else if (el.classList.contains('animate-laravel')) {
-            el.style.width = '50%';
+            el.style.width = '60%';
         } else if (el.classList.contains('animate-django')) {
             el.style.width = '20%';
         }
