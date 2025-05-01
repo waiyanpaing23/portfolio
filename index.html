@@ -80,7 +80,7 @@
             graduated NCC Level 4 Diploma in Computing degree.
             Starting from this, I've developed both technical skills like PHP, Laravel, JavaScript, and Tailwind, as
             well as problem solving skills.
-            I love to create meaning projects with what I've learnt, and my goal is to become a successful fullstack
+            I love to create meaning projects with what I've learnt, and my goal is to become a successful full stack
             developer.
           </p>
           <a href="/cv/Wai Yan Paing.pdf" class="px-6 py-3 bg-teal-700 hover:bg-teal-600 text-white cursor-pointer rounded-lg" download>Download My
@@ -116,6 +116,12 @@
               <div class="w-[100%] md:w-2/3 lg:w-4/5 border-2 border-teal-700 rounded-md text-center px-4 py-2">
                 https://github.com/waiyanpaing23/</div>
             </div>
+
+            <div class="block sm:flex justify-between items-center gap-2">
+              <div class="w-[100%] md:w-1/3">Linkedin</div>
+              <div class="w-[100%] md:w-2/3 lg:w-4/5 border-2 border-teal-700 rounded-md text-center px-4 py-2">
+                https://www.linkedin.com/in/wai-yan-paing-dev/</div>
+            </div>
           </div>
         </div>
 
@@ -127,9 +133,8 @@
     <div class="skills min-h-[100vh] headline" id="skills">
       <h1 class="text-4xl font-bold text-center mt-10"> Skills</h1>
       <div class="w-[100%] lg:w-[90%] mx-auto">
-        <p class="px-14 my-10">I am currently focusing on Laravel and have worked on various projects including a job
-          search platform. Alongside Laravel, I've also learned PHP and
-          Django, to expand my knowledges in different languauges.</p>
+        <p class="px-4 md:px-14 my-10">I am proficient in Laravel and have worked on various projects including a job
+          search platform. Currently, I am expanding my skills by learning React.js. I also have experience in PHP and Django.</p>
       </div>
       <div class="block md:flex lg:space-x-10">
         <div class="flex-1 px-10">
@@ -144,11 +149,11 @@
               <span class="bar headline"><span class="animate-css w-[70%] duration-1000"></span></span>
             </li>
             <li>
-              <h3>Tailwind</h3>
+              <h3>Tailwind CSS</h3>
               <span class="bar headline"><span class="animate-js w-[40%] duration-1000"></span></span>
             </li>
             <li>
-              <h3>React JS</h3>
+              <h3>React.js</h3>
               <span class="bar headline"><span class="animate-django w-[30%] duration-1000"></span></span>
             </li>
           </ul>
@@ -198,7 +203,7 @@
               <img src="/images/unigator.jpg" class="w-full h-full rounded-md object-cover shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 class="text-white text-3xl font-bold mb-2">Unigator (University Navigator)</h2>
+              <h2 class="text-white text-center text-3xl font-bold mb-2">Unigator (University Navigator)</h2>
               <p class="text-white text-lg mb-4">Laravel API</p>
               <div class="flex space-x-3">
                 <a href="https://unigator.newway.com.mm/" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
@@ -218,7 +223,7 @@
             <img src="/images/project4.png" class="w-full h-full object-cover rounded-md shadow-lg" alt="Project">
             <div
               class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h2 class="text-white text-3xl font-bold mb-2">Echo Social Media</h2>
+              <h2 class="text-white text-3xl font-bold mb-2">Mini Social Media</h2>
               <p class="text-white text-lg mb-4">Django</p>
               <div class="flex space-x-3">
                 <a href="https://github.com/waiyanpaing23/echo_social_media" target="_blank" class=" flex items-center border-2 border-white rounded-lg text-white hover:bg-white hover:text-teal-800 px-3 py-2 mb-3">
@@ -266,8 +271,8 @@
       <a href="https://www.facebook.com/share/14dDSvAmvS/?mibextid=qi2Omg" target="_blank">
         <ion-icon name="logo-facebook" class="text-3xl"></ion-icon>
       </a>
-      <a href="https://www.instagram.com/wy_paing" target="_blank">
-        <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
+      <a href="https://www.linkedin.com/in/wai-yan-paing-dev/" target="_blank">
+        <ion-icon name="logo-linkedin" class="text-3xl"></ion-icon>
       </a>
     </div>
   </div>
@@ -280,8 +285,8 @@
       <a href="https://www.facebook.com/share/14dDSvAmvS/?mibextid=qi2Omg" target="_blank">
         <ion-icon name="logo-facebook" class="text-3xl"></ion-icon>
       </a>
-      <a href="https://www.instagram.com/wy_paing" target="_blank">
-        <ion-icon name="logo-instagram" class="text-3xl"></ion-icon>
+      <a href="https://www.linkedin.com/in/wai-yan-paing-dev/" target="_blank">
+        <ion-icon name="logo-linkedin" class="text-3xl"></ion-icon>
       </a>
     </div>
     <p>Copyright&copy;2025, WaiYanPaing</p>
@@ -294,21 +299,18 @@
       const isMenuVisible = menu.style.top === '0%';
 
       if (isMenuVisible) {
-        // Slide out (hide menu)
         menu.classList.remove('animate-slideIn');
         menu.classList.add('animate-slideOut');
 
-        // Delay hiding the menu until the animation completes
         setTimeout(() => {
           menu.style.top = '-100%';
           menu.classList.add('hidden');
           menu.classList.remove('animate-slideOut');
-        }, 500); // Matches the animation duration (0.5s)
+        }, 500);
       } else {
-        // Slide in (show menu)
         menu.classList.remove('hidden', 'animate-slideOut');
         menu.style.top = '0%';
-        void menu.offsetWidth; // Trigger reflow to reset animation
+        void menu.offsetWidth;
         menu.classList.add('animate-slideIn');
       }
     }
@@ -316,11 +318,10 @@
     window.addEventListener("scroll", () => {
       const socialIcon = document.getElementById("social-icon");
 
-      // Check if the user has scrolled to the bottom
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        socialIcon.classList.remove('md:flex'); // Hide the fixed div
+        socialIcon.classList.remove('md:flex');
       } else {
-        socialIcon.classList.add('md:flex'); // Show the fixed div
+        socialIcon.classList.add('md:flex');
       }
     });
 
